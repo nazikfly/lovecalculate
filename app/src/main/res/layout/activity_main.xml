@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/photoEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="photo"/>
+    <Button
+        android:id="@+id/getImageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get photo"/>
+    <Button
+        android:id="@+id/changeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="changePage"/>
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add photo"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</LinearLayout>
